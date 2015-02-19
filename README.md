@@ -1,2 +1,2 @@
 # workers
-Simple Implementation Web Workers
+Web Workers Simple Implementation
