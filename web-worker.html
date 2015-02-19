@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JogjaJS Meetup | Web Workers</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="clear">
+    <div class="logo"><h1>JogjaJS</h1></div>
+    <nav>
+      <ul> 
+        <li><a href="index.html">Image Processing</a></li>
+        <li><a class="active" href="web-worker.html">Web Workers</a></li>
+        <li><a href="web-workers.html">Multiple Web Workers</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="image original">
+      <h2>Original Image</h2>
+      <img src="images/kit.png" alt="Gambar Sungai">
+      <canvas id='before'></canvas>
+    </div>
+    <a href="#gray" class="button grayscale" onclick="processGrayscale()">Grayscale</a>
+    <a href="#Shepia" class="button sepia" onclick="processSepia()">Sepia</a>
+    <div class="image processed">
+      <h2>Processed Image</h2>
+      <canvas id='after'></canvas>
+    </div>
+  </div>
+  <footer>
+    <p>Terima Kasih</p>
+    <p>Sunu Pinasthika Fajar | 2015</p>
+  </footer>
+  <script src="js/function.js"></script>
+  <script src="js/drawer.js"></script>
+  <script src="js/web-worker.js"></script>
+</body>
+</html>
